@@ -17,7 +17,7 @@ const server = http.createServer(app);
 // Socket.io setup
 const io = socketIo(server, {
   cors: {
-    origin: "http://localhost:5173",
+    origin: "https://elite8-digital-job-portal.vercel.app/",
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true
   }
@@ -28,7 +28,7 @@ app.set('socketio', io);
 
 // Middleware
 app.use(cors({
-    origin: "http://localhost:5173",
+    origin: "https://elite8-digital-job-portal.vercel.app/",
     credentials: true
 }));
 app.use(express.json());
@@ -69,7 +69,7 @@ app.use((req, res) => {
   res.status(404).json({ message: 'Route not found' });
 });
 
-const PORT = process.env.PORT || 5000;
+const PORT = 'https://elite8digital-jobportal.onrender.com';
 
 server.listen(PORT, () => {
   console.log(`Server running in ${process.env.NODE_ENV} mode on port ${PORT}`);
