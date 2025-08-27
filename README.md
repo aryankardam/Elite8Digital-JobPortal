@@ -14,7 +14,7 @@ Demonstrates clean code structure, modular architecture, and environment-based c
 ---
 
 ## 📂 Project Structure
-
+```bash
 root/
 ├── frontend/ # Vite React app
 │ ├── src/
@@ -28,7 +28,7 @@ root/
 │ ├── server.js
 │ └── package.json
 └── README.md
-
+```
 
 - **Frontend:** Component-based, environment-aware, built with Vite.  
 - **Backend:** REST API with modular routes/controllers, environment variables for sensitive data.  
