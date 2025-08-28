@@ -17,7 +17,7 @@ const server = http.createServer(app);
 // Socket.io setup
 const io = socketIo(server, {
   cors: {
-    origin: "https://elite8-digital-job-portal.vercel.app/",
+    origin: "https://elite8-digital-job-portal.vercel.app",
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true
   }
@@ -28,7 +28,7 @@ app.set('socketio', io);
 
 // Middleware
 app.use(cors({
-    origin: "https://elite8-digital-job-portal.vercel.app/",
+    origin: "https://elite8-digital-job-portal.vercel.app",
     credentials: true
 }));
 app.use(express.json());
