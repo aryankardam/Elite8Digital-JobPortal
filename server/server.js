@@ -69,8 +69,7 @@ app.use((req, res) => {
   res.status(404).json({ message: 'Route not found' });
 });
 
-const PORT = 'https://elite8digital-jobportal.onrender.com';
-
+const PORT = process.env.PORT || 3000;
 server.listen(PORT, () => {
-  console.log(`Server running in ${process.env.NODE_ENV} mode on port ${PORT}`);
+  console.log(`🚀 Server running on http://localhost:${PORT}`);
 });
